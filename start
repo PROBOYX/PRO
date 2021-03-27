@@ -19,7 +19,7 @@ _get_repolink () {
             echo "${UPSTREAM_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0dlcnRTaG5haWRlcnMvU3VuZGF5VXNlcmJvdC9hcmNoaXZlL21haW4uemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1VMVFJBLU9QL1VMVFJBLVgvbWFpbi9hcmNoaXZlLnppcA==" | base64 -d
     fi
 }
 
@@ -37,7 +37,7 @@ _set_bot () {
     rm -rf "$zippath"
     sleep 5
     cd $CATPATH
-    echo "    Starting SundayUserBot    "
+    echo "    Starting lund userbot    "
     echo "
                         
 
@@ -52,7 +52,7 @@ _set_bot () {
     :.......::::......:::........::..:::::..::........::::.......::::::..:::::
     "
     python3 ../setup/updater.py ../requirements.txt requirements.txt
-    python3 -m sundaybot
+    python3 -m ULTRA
 }
 
 _set_bot
